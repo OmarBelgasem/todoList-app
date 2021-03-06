@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/todos.css">
+    <link rel="stylesheet" href="assets/css/nbar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="assets/js/lip/min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="container">
+                    <ul class="navbar-left" id="ul">
+                        <button id="li"><a> Logout </a></button>
+                        <button id="li"><a> about </a></button>
+                    </ul>
+                    <!--end navbar-left -->
+                <div class="navbar-right">
+                    <!-- <div id="switch" class="dark-button">
+                        <button class="dark-button"> Dark </button>
+                        <div id="circle"></div>
+                    </div> -->
+
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox"/>
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <!--end navbar-right -->
+            </div>
+               <!--end container -->
+          </nav>
+        <div>
+        <div id="container">
+            <h1> To-Do List <i class="fa-plus"> + </i></h1>
+            <input id="input" type="text" placeholder="Add New Todo">
+            <input id="search" type="text" placeholder="Search for todos">
+            <div class="error"></div>
+            <ul id="element">
+                
+            </ul>
+        </div>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script type="text/javascript" src="assets/js/todo.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    
+</body>
+</html>
